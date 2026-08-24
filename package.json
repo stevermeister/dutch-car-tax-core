@@ -1,0 +1,20 @@
+{
+  "name": "dutch-car-tax-core",
+  "version": "0.1.0",
+  "description": "Dutch motorrijtuigenbelasting (MRB) tax calculation logic and tariff data, shared between car.thetax.nl and its MCP server",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.19",
+    "typescript": "~5.9.0"
+  }
+}
