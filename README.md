@@ -3,9 +3,10 @@
 Dutch motorrijtuigenbelasting (MRB / road tax) calculation logic and tariff
 data: the 2026 provincial tariff grid, fuel-type rate multipliers, the
 oldtimer (classic car) exemption rule, the `calculatePrice` function that
-ties them together, and `getEffectiveWeight` — the massa rijklaar /
+ties them together, `getEffectiveWeight` — the massa rijklaar /
 massa ledig voertuig fallback rule for deriving the tax-relevant weight
-from raw RDW vehicle data.
+from raw RDW vehicle data — and `mapRdwFuelType`, which maps RDW's raw
+fuel-type data to the fuel-type keys `calculatePrice` expects.
 
 This package has no runtime dependencies and no framework assumptions — it's
 plain TypeScript compiled to CommonJS, shared between:

@@ -1,6 +1,6 @@
 {
   "name": "dutch-car-tax-core",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Dutch motorrijtuigenbelasting (MRB) tax calculation logic and tariff data, shared between car.thetax.nl and its MCP server",
   "license": "MIT",
   "main": "dist/index.js",
